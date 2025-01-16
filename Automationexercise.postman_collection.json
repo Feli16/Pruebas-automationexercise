@@ -1,0 +1,274 @@
+{
+	"info": {
+		"_postman_id": "db6e2bdc-d362-4c95-93f1-152e7cf73a5c",
+		"name": "Automationexercise",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "14788474"
+	},
+	"item": [
+		{
+			"name": "ProductLIST",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://automationexercise.com/api/productsList"
+			},
+			"response": []
+		},
+		{
+			"name": "ProductLIST POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "https://automationexercise.com/api/productsList"
+			},
+			"response": []
+		},
+		{
+			"name": "BrandsList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://automationexercise.com/api/brandsList"
+			},
+			"response": []
+		},
+		{
+			"name": "BrandsList PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "https://automationexercise.com/api/productsList"
+			},
+			"response": []
+		},
+		{
+			"name": "Search Product POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://automationexercise.com/api/searchProduct?search_product=top",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"searchProduct"
+					],
+					"query": [
+						{
+							"key": "search_product",
+							"value": "top"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Product POST without  parameter",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": "https://automationexercise.com/api/searchProduct"
+			},
+			"response": []
+		},
+		{
+			"name": "Verify Login with valid details",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "inazirwetrust@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Feli1606@",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://automationexercise.com/api/verifyLogin"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE To Verify Login",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "https://automationexercise.com/api/verifyLogin"
+			},
+			"response": []
+		},
+		{
+			"name": "POST To Verify Login with invalid details",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://automationexercise.com/api/verifyLogin?Login=email, password",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"verifyLogin"
+					],
+					"query": [
+						{
+							"key": "Login",
+							"value": "email, password"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST To Verify Login with invalid details Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Felipe",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "destroy1606@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Mr",
+							"type": "text"
+						},
+						{
+							"key": "birth_date",
+							"value": "01",
+							"type": "text"
+						},
+						{
+							"key": "birth_month",
+							"value": "01",
+							"type": "text"
+						},
+						{
+							"key": "birth_year",
+							"value": "1990",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "felipe",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "perez",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "buckeye",
+							"type": "text"
+						},
+						{
+							"key": "address1",
+							"value": "none",
+							"type": "text"
+						},
+						{
+							"key": "address2",
+							"value": "none",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "costa rica",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "40852",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "Heredia",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Belen",
+							"type": "text"
+						},
+						{
+							"key": "mobile_number",
+							"value": "87452145",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://automationexercise.com/api/createAccount"
+			},
+			"response": []
+		}
+	]
+}
